@@ -1,0 +1,390 @@
+  * {
+      box-sizing: border-box;
+  }
+  section{
+    padding: 4rem 0 2rem;
+  }
+  
+  
+  .container {
+      max-width: 1068px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  header {
+      display: block;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+  }
+  header.shadow{
+    background: #858484a2;
+    box-shadow: 2px 4px 4px rgba(3, 19, 112, 0.616);
+    transition: 0.5s;
+  }
+  header.shadow #search-icon{
+    color: black;
+  }
+  .nav{
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      padding: 15px 30px;
+  }
+  #menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      color: rgb(235, 119, 90);
+      display: none;
+  }
+  .logo {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(4, 8, 46);
+}
+
+.logo span {
+    color: rgb(14, 192, 7);
+}
+.navbar {
+    display: flex;
+    column-gap: 2rem;
+}
+.navbar a {
+    color: rgb(4, 4, 250);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar li :hover,
+.navbar .active {
+    color: rgb(2, 248, 22);
+    border-bottom: 3px solid blue;
+}
+#search-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-box{
+     position: absolute;
+     top: 110%;
+     right: 0;
+     left: 0;
+     background: var(rgb(82, 224, 82));
+     box-shadow: 4px 4px 20px rgba(2, 179, 2, 0.822);
+     border: 1px solid;
+     border-radius: 0.5rem;
+     clip-path: circle(0% at 100%  0%);
+ }
+ .search-box.active{
+    clip-path: circle(144% at 100%  0%);
+    transition: 0.4s;
+}
+.search-box input {
+      width: 100%;
+      padding: 20px;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 1rem;
+  }
+ .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  .dropdown-menu {
+      display: none;
+      position: absolute;
+      min-width: 140px;
+      background-color: rgba(255, 254, 254, 0.568);
+      box-shadow: 0px 8px 16px 0px rgb(13, 95, 4);
+      padding: 12px 16px;
+      z-index: 1;
+  }
+  .dropdown:hover .dropdown-menu {
+      display: block;
+      
+  }
+  .home{
+    max-width: 1300px;
+    margin: auto;
+    width: 130%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background: url(https://www.deere.ca/assets/images/region-4/products/tractors/row-crop-tractors/8r-8rt-row-crop-tractors/8r-410/8r_410_r4f063847_large_660c917945cea0af3aeb242ddf4c52b9540ef7cc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+  }
+  
+  .home h1 span{
+      color: #e41515;
+  }
+ .heading{
+    text-align: center;
+}
+.heading span{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: red
+}
+.heading p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.home h1{
+    padding-left: 30px;
+    font-size: 2.5rem;
+    color: rgb(230, 235, 229);
+}
+.btn1{
+    padding: 10px 20px;
+    background: #e41515;
+    color: white;
+    font-weight: 400;
+}
+.btn1:hover{
+    background: rgb(9, 187, 9);
+}
+
+.btn {
+    padding: 10px;
+    background: #8d918e;
+    color: white;
+    font-weight: 300;
+}
+
+.btn:hover {
+    background: rgb(17, 17, 17);
+}
+
+.equipment-container {
+    display: flex!important;
+    flex-wrap: wrap !important;
+    gap: 2rem;
+    margin-top: 2rem !important;
+}
+.equipment-container .box {
+    flex: 1 1 17rem !important;
+    position: relative !important;
+    padding: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background: #ecebeb;
+    border-radius: 0.5rem !important;
+}
+.equipment-container .box img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 1rem;
+}
+.equipment-container .box h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.equipment-container .box span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(179, 12, 12);
+}
+.equipment-container .box .bx {
+    color: rgb(226, 139, 8);
+    margin: 0.8rem 0;
+}
+.equipment-container .box .btn{
+    max-width: 130px;
+}
+.equipment-container .box .details{
+    display: flex !important;
+    align-items: center;
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: black;
+
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.about-img{
+    flex: 1 1 21rem;
+}
+.about-text{
+    flex:1 1 21rem
+}
+.about-text span{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(5, 236, 5);
+    
+}
+.about-text h2{
+    font-size: 1.7rem;
+}
+.about-text p{
+    font-size: 1rem;
+    margin: 0.5rem 0 1.4rem;
+}
+.footer{
+    background-color: rgb(56, 55, 55);
+    color: rgb(211, 211, 214);
+    border-top: 2px solid rgb(77, 74, 74);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.footer-container .logo{
+    color: rgb(4, 8, 46);
+    margin-bottom: 1rem;
+}
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.social a{
+    font-size: 24px;
+    color:rgb(211, 211, 214);
+    margin-right: 1rem;
+}
+.social a:hover{
+    color: rgba(158, 4, 4, 0.842);
+}
+.footer-box h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.footer-box a,
+.footer-box p{
+    color: rgb(4, 146, 80);
+    margin-bottom: 10px;
+}
+.footer-box a:hover{
+    color: rgb(248, 245, 245);
+}
+.copyright{
+   padding: 5px;
+   text-align: center;
+   color: rgb(179, 178, 178);
+   background: rgb(39, 38, 38);
+}
+@media (max-width:1080px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+@media(max-width: 990px){
+    .nav{
+        padding: 15px 20px;
+    }
+    section{
+        padding: 3rem 0 1rem;
+    }
+    .home-text{
+        padding-left: 0.5rem;
+    }
+    .home-text h1{
+        font-size: 2.1rem;
+    }
+}
+@media(max-width: 920px){
+    #search-icon{
+        color: rgb(36, 35, 35);
+    }
+}
+@media(max-width:768px){
+    .search-box{
+        padding: 14px;
+    }
+    .nav{
+        padding: 10px 0;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background:#5a5959a2 ;
+        row-gap: 0.5rem;
+        text-align: center;
+        box-shadow: 4px 4px 20px rgba(2, 79, 179, 0.822);
+        clip-path: circle(0% at 0% 0%);
+        transition: 0.5s;
+    }
+    .navbar a{
+        display: block;
+        padding: 14px;
+    }
+    .navbar a:hover,
+    .navbar .active{
+        border-bottom: none;
+        background: rgb(2, 248, 22);
+        color:  blue;
+    }
+    .navbar.active{
+        clip-path: circle(144% at 0% 0%);
+    }
+}
+@media(max-width:727px){
+    .heading span{
+        font-size: 0.9rem;
+    }
+    .heading h2{
+        font-size: 1.4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-text{
+        text-align: center;
+    }
+    .about-text{
+font-size: 1.4rem;
+    }
+}
+@media(max-width:607px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:360px){
+    .search-box input{
+        padding: 11px;  
+    }
+    .home{
+        min-height: 500px;
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+    .home-text p br{
+        display: contents;
+    }
+}

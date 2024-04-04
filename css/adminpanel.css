@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: block;
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #858484a2;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(4, 8, 46);
+}
+
+.logo span {
+    color: rgb(14, 192, 7);
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    padding: 20px 0;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 60px;
+    color: rgb(4, 4, 250);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: rgb(2, 248, 22);
+    border-bottom: 3px solid blue;
+}
+
+.main-content {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+.content-header {
+    margin-bottom: 20px;
+    position: fixed;
+    top: 100px;
+    overflow-y: auto;
+}
+
+.content-header h1 {
+    font-size: 28px;
+    color: #474646;
+
+}
+
+.content-body {
+    margin-top: 30px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+ .row {
+     display: flex;
+     justify-content: space-between;
+     margin: 40px;
+ }
+
+ .card {
+     background-color: green;
+     color: white;
+     border-radius: 8px;
+     width: 70%;
+     text-align: center;
+     text-decoration: none;
+     margin-right: 100px;
+ }
+
+ .card:hover {
+     background-color: darkgreen;
+ }
+
+ .card-body {
+     padding: 30px;
+ }
+
+ .card-title {
+     margin-top: 0;
+ }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .main-content .content-body .card {
+        width: 100%;
+    }
+}
